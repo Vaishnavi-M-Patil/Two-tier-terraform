@@ -39,14 +39,20 @@ This project provisions a two-tier architecture on AWS using Terraform. It separ
 ### 1. Create provider.tf file:
 The provider.tf file in Terraform is a configuration file that specifies the cloud provider and its corresponding plugin that Terraform will use to manage resources in that provider.In this project, we use the AWS provider.
 
-```
+
 .markdown-body {
   --md-code-background: #e3dcef;
   --md-code-text: #4a2b7b;
   --md-code-tabs: #c6b8dd;
   --md-code-radius: 4px;
 }
+
 ```
+provider "aws" {
+  region = var.region
+}
+```
+
 ### Set Up S3 and DynamoDB for Remote State
 Before running terraform init, manually create:
 - An S3 bucket (e.g., state-file-bucket-tf-121)
