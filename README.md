@@ -1,5 +1,4 @@
-# Two-tier-terraform
-
+# Deploy two-tier architecture in AWS using Terraform
 ## 🚀 Overview:
 This project provisions a two-tier architecture on AWS using Terraform. It separates the application into a frontend (public subnet) and backend (private subnet) tier. Infrastructure is defined using modular, reusable Terraform code with remote state management and basic automation.
 
