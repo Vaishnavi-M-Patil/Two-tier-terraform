@@ -44,7 +44,7 @@ Before running terraform init, manually create:
 - A DynamoDB table (e.g., state_lock_table) with LockID as the primary key
 
 
-### 🧱 VPC Module:
+### 🧱 VPC Module: [ 🔗 ](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/tree/main/modules/vpc)
 The VPC module in this project defines all networking components required by the infrastructure. It includes:
 - **Virtual Private Cloud (VPC):** An isolated network environment.
 - **Subnets:**
@@ -53,7 +53,7 @@ The VPC module in this project defines all networking components required by the
 - **Internet Gateway:** Enables internet access for public subnets.
 - **Route Tables:** Define routing rules for each subnet.
 
-### 🛠️ application Module:
+### 🛠️ application Module: [ 🔗 ](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/tree/main/modules/application)
 The application module is responsible for provisioning and configuring the frontend tier of the infrastructure. It includes:
 - Launch **EC2 Instances** in public subnets (across multiple Availability Zones).
 - Attaching **security groups** to control inbound (HTTP/SSH) and outbound traffic.
@@ -67,7 +67,7 @@ The application module is responsible for provisioning and configuring the front
   - Listens on port 80 (HTTP) and forwards traffic to backend EC2 instances on port 80.
 - Expose **Public IPs** of frontend EC2 instances via output variables.
 
-### 📝 Database Module:
+### 📝 Database Module: [ 🔗 ](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/tree/main/modules/database)
 The database module provisions the backend database tier in the private subnet. It focuses on high availability, data durability, and restricted access. Key features include:
 - Creating an RDS instance (MySQL) in private subnets.
 - Defining a DB subnet group with private subnets across multiple AZs.
