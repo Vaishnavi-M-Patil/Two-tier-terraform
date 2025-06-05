@@ -82,16 +82,24 @@ The terraform init the command is used to initialize a new or existing Terraform
 ```
 terraform init
 ```
+
+![init image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/init.png)
+
 #### 2. terraform plan:
 The terraform plan the command is used to create an execution plan for the Terraform configuration. This command shows what resources Terraform will create, modify, or delete when applied.
 ```
 terraform plan
 ```
+
+![plan image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/plan.png)
+
 #### 3. terraform apply:
 The terraform apply the command is used to apply the Terraform configuration and create or modify resources in the target environment.
 ```
 terraform apply
 ```
+![apply image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/apply.png)
+
 
 ### 📤 Output:
 After applying, Terraform will output:
@@ -101,28 +109,28 @@ After applying, Terraform will output:
 
 ### 🔍 Verify Deployment in AWS Console
 #### 1. VPC and Network resources
-![VPC image]()
+![VPC image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/vpc.png)
 
 #### 2. EC2 instances
-![VPC image]()
+![EC2 image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/instances.png)
 
 #### 3. Load Balancer
-![VPC image]()
+![Load Balancer image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/ld.png)
 
 #### 4. Target Group
-![VPC image]()
+![target group image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/tg.png)
 
 #### 5. RDS MYSQL Database
-![VPC image]()
+![RDS image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/database.png)
 
 #### 6. Web Server on EC2 Instances
 web server-1
-![VPC image]()
+![server-1 image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/server-1.png)
 web server-2
-![VPC image]()
+![server-2 image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/server--2.png)
 
 #### 7. Security Groups
-![VPC image]()
+![security group image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/sg.png)
 
 ## ⚠️ Important: Clean up Your Resources:
 Remember to delete all your AWS resources ( Application Load Balancer, RDS instances, EC2 instances, etc.) and release any Elastic IPs once you’re done to avoid ongoing charges.
