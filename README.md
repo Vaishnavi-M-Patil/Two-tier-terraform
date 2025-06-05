@@ -24,7 +24,7 @@ This project provisions a two-tier architecture on AWS using Terraform. It separ
 
 
 ## 📁 Project Structure:
-```
+`
 .
 ├── modules/                         # Reusable infrastructure modules
 │   ├── vpc/                         # VPC, subnets, route tables, IGW, NAT Gateway
@@ -36,7 +36,7 @@ This project provisions a two-tier architecture on AWS using Terraform. It separ
 ├── outputs.tf                      # Output variable definitions
 ├── terraform.tfvars                # Actual variable values for deployment
 └── provider.tf                     # AWS provider and backend configuration
-```
+`
 
 ## 💻 Getting Started:
 ### ☁️ Create provider.tf file: [ 🔗 ](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/provider.tf)
