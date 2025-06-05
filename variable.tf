@@ -1,4 +1,6 @@
 #create variable block for region
-variable "region" {
-  default = "ap-northeast-1"
-}
+variable "region" {}
+
+variable "db_user" {}
+
+variable "db_passsword" {}

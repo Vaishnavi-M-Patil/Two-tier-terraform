@@ -1,10 +1,7 @@
 variable "password" {
-    default = "password"
 }
 
-variable "user" {
-    default = "admin"
-}
+variable "user" {}
 
 variable "vpc_id" {}
 

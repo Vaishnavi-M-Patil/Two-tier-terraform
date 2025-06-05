@@ -1,4 +1,9 @@
 #Manually destroy the DB instance using:  terraform destroy -target=module.database.aws_db_instance.db1
+# Creates a DB subnet group using two private subnets.
+resource "aws_db_subnet_group" "db_subnet_group" {
+  name       = "db_subnet_group"
+  subnet_ids = [ var.pvt_subnet_1_id , var.pvt_subnet_2_id ]
+}
 
 resource "aws_db_instance" "db1" {
   allocated_storage           = 5
@@ -22,12 +27,7 @@ resource "aws_db_instance" "db1" {
 
 }
 
-# Creates a DB subnet group using two private subnets.
-resource "aws_db_subnet_group" "db_subnet_group" {
-  name       = "db_subnet_group"
-  subnet_ids = [ var.pvt_subnet_1_id , var.pvt_subnet_2_id ]
-  depends_on = [ aws_db_instance.db1 ]
-}
+
 
 resource "aws_security_group" "db_sg" {
     name ="db_sg"

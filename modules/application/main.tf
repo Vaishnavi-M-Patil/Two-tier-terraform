@@ -58,6 +58,17 @@ resource "aws_lb_target_group" "appln_load_balancer_tg" {
   port     = 80
   protocol = "HTTP"
   vpc_id   = var.vpc_id
+
+  health_check {
+    interval            = 30
+    path                = "/"
+    protocol            = "HTTP"
+    timeout             = 10
+    healthy_threshold   = 3
+    unhealthy_threshold = 3
+    matcher = "200-399"                   # ALB only sends traffic to instances returning success HTTP codes
+  }
+
 }
 
 # Create Load Balancer listener

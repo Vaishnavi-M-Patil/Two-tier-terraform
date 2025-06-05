@@ -16,5 +16,7 @@ module "database" {
     vpc_id = module.vpc.vpc_id
     pvt_subnet_1_id = module.vpc.pvt_subnet_1_id
     pvt_subnet_2_id = module.vpc.pvt_subnet_2_id
+    user = var.db_user
+    password = var.db_passsword
 }
 
