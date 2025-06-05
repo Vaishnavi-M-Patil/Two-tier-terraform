@@ -24,15 +24,17 @@ This project provisions a two-tier architecture on AWS using Terraform. It separ
 
 
 ## 📁 Project Structure:
-├── modules/  
-  │ ├── vpc/   # VPC, subnets, route tables, IGW  
-  │ ├── application/  # EC2 instances, security groups, user data  
-  │ └── database/   # (Optional) RDS resources  
-├── main.tf   # Entry point for the root module  
-├── variables.tf  # Input variables  
-├── outputs.tf   # Output variables  
-├── terraform.tfvars   # Variable values  
-├── provider.tf     # AWS provider configuration  
+.
+├── modules/                         # Reusable infrastructure modules
+│   ├── vpc/                         # VPC, subnets, route tables, IGW, NAT Gateway
+│   ├── application/                # EC2 instances, security groups, ALB, user data
+│   └── database/                   # (Optional) RDS resources, subnet group, SGs
+│
+├── main.tf                         # Entry point for Terraform root module
+├── variables.tf                    # Input variable definitions
+├── outputs.tf                      # Output variable definitions
+├── terraform.tfvars                # Actual variable values for deployment
+├── provider.tf                     # AWS provider and backend configuration
 
 
 ## 💻 Getting Started:
