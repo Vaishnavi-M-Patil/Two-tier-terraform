@@ -24,17 +24,7 @@ This project provisions a two-tier architecture on AWS using Terraform. It separ
 
 
 ## 📁 Project Structure:
-.
-├── modules/                         # Reusable infrastructure modules
-│   ├── vpc/                         # VPC, subnets, route tables, IGW, NAT Gateway
-│   ├── application/                # EC2 instances, security groups, ALB, user data
-│   └── database/                   # (Optional) RDS resources, subnet group, SGs
-│
-├── main.tf                         # Entry point for Terraform root module
-├── variables.tf                    # Input variable definitions
-├── outputs.tf                      # Output variable definitions
-├── terraform.tfvars                # Actual variable values for deployment
-├── provider.tf                     # AWS provider and backend configuration
+![image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/Screenshot%202025-06-06%20004558.png)
 
 
 ## 💻 Getting Started:
@@ -111,7 +101,7 @@ After applying, Terraform will output:
 
 ### 🔍 Verify Deployment in AWS Console
 #### 1. VPC and Network resources
-![VPC image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/vpc.png)
+![image](https://github.com/user-attachments/assets/a5ac2746-026c-4302-b40f-3ebb48e5d4c6)
 
 #### 2. EC2 instances
 ![EC2 image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/instances.png)
