@@ -101,7 +101,7 @@ After applying, Terraform will output:
 
 ### 🔍 Verify Deployment in AWS Console
 #### 1. VPC and Network resources
-![image](https://github.com/user-attachments/assets/a5ac2746-026c-4302-b40f-3ebb48e5d4c6)
+![image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/vpc.png)
 
 #### 2. EC2 instances
 ![EC2 image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/instances.png)
