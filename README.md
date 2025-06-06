@@ -125,4 +125,5 @@ web server-2
 ![security group image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/sg.png)
 
 ## ⚠️ Important: Clean up Your Resources:
-Remember to delete all your AWS resources ( Application Load Balancer, RDS instances, EC2 instances, etc.) and release any Elastic IPs once you’re done to avoid ongoing charges.
+Remember to delete all AWS resources ( Application Load Balancer, RDS instances, EC2 instances, etc.) and release any Elastic IPs once done to avoid ongoing charges.
+use command to release all resou
