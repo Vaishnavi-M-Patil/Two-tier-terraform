@@ -71,7 +71,7 @@ resource "aws_lb_target_group" "appln_load_balancer_tg" {
 
 }
 
-# Create Load Balancer listener
+# Create Load Balancer listener to receive and route traffic to the appropriate servers. 
 resource "aws_lb_listener" "two-tier-lb-listner" {
   load_balancer_arn = aws_lb.appln_load_balancer.arn
   port              = "80"
