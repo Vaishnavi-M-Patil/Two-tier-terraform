@@ -24,15 +24,7 @@ This project provisions a two-tier architecture on AWS using Terraform. It separ
 
 
 ## 📁 Project Structure:
-├── modules/  
-  │ ├── vpc/   # VPC, subnets, route tables, IGW  
-  │ ├── application/  # EC2 instances, security groups, user data  
-  │ └── database/   # (Optional) RDS resources  
-├── main.tf   # Entry point for the root module  
-├── variables.tf  # Input variables  
-├── outputs.tf   # Output variables  
-├── terraform.tfvars   # Variable values  
-├── provider.tf     # AWS provider configuration  
+![project structure image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/Screenshot%202025-06-06%20004558.png)
 
 
 ## 💻 Getting Started:
@@ -109,7 +101,7 @@ After applying, Terraform will output:
 
 ### 🔍 Verify Deployment in AWS Console
 #### 1. VPC and Network resources
-![VPC image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/vpc.png)
+![image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/vpc.png)
 
 #### 2. EC2 instances
 ![EC2 image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/instances.png)
@@ -131,6 +123,3 @@ web server-2
 
 #### 7. Security Groups
 ![security group image](https://github.com/Vaishnavi-M-Patil/Two-tier-terraform/blob/main/assets/sg.png)
-
-## ⚠️ Important: Clean up Your Resources:
-Remember to delete all your AWS resources ( Application Load Balancer, RDS instances, EC2 instances, etc.) and release any Elastic IPs once you’re done to avoid ongoing charges.
